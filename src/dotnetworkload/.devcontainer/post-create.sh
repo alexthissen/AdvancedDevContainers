@@ -8,7 +8,7 @@ dotnet tool restore
 sudo apt-get update && sudo apt-get install -y protobuf-compiler
 
 # Import and trust the ASP.NET Core HTTPS development certificate
-dotnet dev-certs https --import /https/eshop-ssl.pfx --clean --password $PFX_PASSWORD --verbose
+dotnet dev-certs https --import /https/$PFX_FILENAME --clean --password $PFX_PASSWORD --verbose
 dotnet dev-certs https --trust --verbose
 dotnet dev-certs https --check --trust --verbose
 

@@ -8,4 +8,3 @@ sudo dotnet workload update
 
 # Install Agent Package Manager CLI tool
 curl -sSL https://aka.ms/apm-unix | sh
-apm --version

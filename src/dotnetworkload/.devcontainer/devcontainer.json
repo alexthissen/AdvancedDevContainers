@@ -19,6 +19,7 @@
 	"containerEnv": {
 		"WORKSPACE_ROOT" : "${containerWorkspaceFolder}",
 		"PFX_PASSWORD": "${localEnv:PFX_PASSWORD:DefaultPassword!}",
+		"PFX_FILENAME": "${localWorkspaceFolderBasename}-ssl.pfx",
 		"SSL_CERT_DIR": "/home/vscode/.aspnet/dev-certs/trust:/usr/lib/ssl/certs"
 	},
 
@@ -30,8 +31,8 @@
         {
             "type": "bind",
             //"source": "${localEnv:HOME}${localEnv:USERPROFILE}/.aspnet/https/eshop-ssl.pfx",
-            "source": "${localEnv:USERPROFILE}/.aspnet/https/eshop-ssl.pfx",
-            "target": "/https/eshop-ssl.pfx"
+            "source": "${localEnv:USERPROFILE}/.aspnet/https/${localWorkspaceFolderBasename}-ssl.pfx",
+            "target": "/https/${localWorkspaceFolderBasename}-ssl.pfx"
         },
 		{
 			"type": "volume",
