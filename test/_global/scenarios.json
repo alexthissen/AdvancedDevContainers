@@ -1,0 +1,11 @@
+{
+    "devproxy_and_apm": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "devproxy": {
+                "version": "2.4.0"
+            },
+            "apm": {}
+        }
+    }
+}

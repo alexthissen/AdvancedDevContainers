@@ -1,0 +1,25 @@
+{
+    "ubuntu-240": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:1": {
+                "installZsh": false,
+                "installOhMyZsh": false,
+                "upgradePackages": false,
+                "username": "octocat"
+            },
+            "devproxy": {
+                "version": "2.4.0"
+            }
+        },
+        "remoteUser": "octocat"
+    },
+    "debian-220": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "devproxy": {
+                "version": "2.2.0"
+            }
+        }
+    }
+}
