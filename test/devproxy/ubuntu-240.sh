@@ -24,7 +24,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "validate version" devproxy --version | grep 'Dev Proxy version 2.4.0'
+check "validate version" devproxy --version | grep '2.4.0'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

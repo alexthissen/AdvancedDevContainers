@@ -1,10 +1,13 @@
 name: "Release dev container features & Generate Documentation"
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - feature
 
 jobs:
   deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/feature' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write

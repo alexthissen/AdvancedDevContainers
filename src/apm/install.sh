@@ -13,7 +13,7 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-echo "Installing Agent Package Manager version"
+echo "Installing Agent Package Manager"
 
 curl -sSL https://aka.ms/apm-unix | sh
 

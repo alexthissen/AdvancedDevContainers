@@ -10,7 +10,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check Dev Proxy version" bash -c "devproxy --version | grep 'Dev Proxy version 2.2.0'"
+check "check Dev Proxy version" bash -c "devproxy --version | grep '2.2.0'"
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

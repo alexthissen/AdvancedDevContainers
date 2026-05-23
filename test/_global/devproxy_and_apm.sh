@@ -24,8 +24,8 @@ echo -e "\n"
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check Dev Proxy version" bash -c "devproxy --version | grep 'Dev Proxy version'"
-check "check Agent Package Manager version" bash -c "apm --version | grep 'Agent Package Manager version'"
+check "check Dev Proxy version" bash -c "devproxy --version | grep '2.4.0'"
+check "check Agent Package Manager version" bash -c "apm --version | grep 'Agent Package Manager (APM) CLI version'"
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
