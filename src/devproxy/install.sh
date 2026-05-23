@@ -6,6 +6,12 @@ install_dir="/opt/microsoft/dev-proxy"
 
 echo "Installing Dev Proxy version: $version"
 
+# Make certificates trusted in the container
+# Copy the post-create script into the image so it survives to runtime
+mkdir -p /usr/local/share/features/devproxy
+cp "$(dirname "$0")/post-create.sh" /usr/local/share/features/devproxy/post-create.sh
+chmod +x /usr/local/share/features/devproxy/post-create.sh
+
 # Create installation directory
 mkdir -p "$install_dir"
 cd "$install_dir"

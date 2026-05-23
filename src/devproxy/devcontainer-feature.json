@@ -28,6 +28,7 @@
 			]
 		}
     },
+	"postCreateCommand": "bash /usr/local/share/features/devproxy/post-create.sh",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
