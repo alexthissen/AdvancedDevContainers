@@ -1,0 +1,10 @@
+{
+	"id": "apm",
+	"name": "Agent Package Manager (APM)",
+	"version": "1.0.1",
+	"description": "Installs APM is a dependency manager for AI agents",
+	"documentationURL": "https://microsoft.github.io/apm/",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
